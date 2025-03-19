@@ -102,3 +102,33 @@ enabling the creation of visualizations that effectively illustrated the cyber t
  <br />
 
  
+## Metrics Before Hardening / Security Controls
+
+The following table shows the metrics we measured in our insecure environment for 24 hours:
+Start Time 2025-02-02 17:02:00 PM
+Stop Time 2025-02-03 17:02:00 PM
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent (Windows VM)            | 21182
+| Syslog (Linux VM)                   | 4877
+| SecurityAlert (Microsoft Defender for Cloud            | 0
+| SecurityIncident (Sentinel Incidents)        | 343
+| NSG Inbound Malicious Flows Allowed | 969
+
+
+
+## Metrics After Hardening / Security Controls
+
+The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
+Start Time 2025-02-18 15:37
+Stop Time	2025-02-19 15:37
+
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent (Windows VM)            | 783
+| Syslog (Linux VM)                   | 23
+| SecurityAlert (Microsoft Defender for Cloud            | 0
+| SecurityIncident (Sentinel Incidents)        | 0
+| NSG Inbound Malicious Flows Allowed | 0
