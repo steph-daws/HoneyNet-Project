@@ -49,3 +49,18 @@ The main objective of this project was to [set up virtual machines that were int
 ## Architecture Prior to Implementing Hardening Measures and Security Controls
 ![Architecture Diagram](https://i.imgur.com/1tLjWY9.png)
 
+## Architecture After Implementing Hardening Measures and Security Controls
+![Architecture Diagram](https://i.imgur.com/ch1cAMU.png)
+ <b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
+
+- <b>Network Security Groups (NSGs)</b>: I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address. This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
+
+- <b>Built-in Firewalls</b>: I configured the built-in firewalls on the virtual machines to restrict access and protect the resources from unauthorized connections. This step involved fine-tuning the firewall rules based on the specific requirements of each VM, thereby minimizing the potential attack surface.
+
+- <b>Private Endpoints</b>: To enhance the security of other Azure resources, I replaced the public endpoints with Private Endpoints. This ensured that access to sensitive resources, such as storage accounts and databases, was limited to the virtual network and not exposed to the public internet. As a result, these resources were protected from unauthorized access and potential attacks.
+
+By comparing the security metrics before and after implementing these hardening measures and security controls, I was able to demonstrate the effectiveness of each step in improving the overall security posture of the Azure environment.
+
+## Attack Maps Before Hardening / Security Controls
+<br />
+
