@@ -82,3 +82,23 @@ enabling the creation of visualizations that effectively illustrated the cyber t
  - <b>This attack map highlights the numerous syslog authentication failures experienced by the Linux server I deployed, indicating that unauthorized access attempts were made from outisde. This serves as a reminder of the importance of securing Linux servers with strong authentication mechanisms and monitoring system logs for signs of intrusion attempts.</b>
 
  
+![Linux Syslog Auth Failures](https://i.imgur.com/QW8PF0o.png)<br>
+
+ <br />
+ <br />
+ 
+ - <b>This attack map showcases numerous RDP and SMB failures, illustrating the persistent attempts by potential attackers to exploit these protocols. The visualization emphasizes the need for securing remote access and file sharing services to protect against unauthorized access and potential cyber threats.</b>
+ 
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/SETmQBl.png)<br>
+
+ <br />
+ <br />
+
+## Attack Maps After Hardening / Security Controls
+
+> All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.
+
+ <br />
+ <br />
+
+ 
