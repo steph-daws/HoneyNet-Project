@@ -132,3 +132,11 @@ Stop Time	2025-02-19 15:37
 | SecurityAlert (Microsoft Defender for Cloud            | 0
 | SecurityIncident (Sentinel Incidents)        | 0
 | NSG Inbound Malicious Flows Allowed | 0
+
+
+## Conclusion
+
+In conclusion, I set up a compact, but effective honeynet using Microsoft Azure's robust cloud infrastructure. Microsoft Sentinel was then utilized to trigger alerts and generate incidents based on the logs ingested from the implemented watch lists. Baseline metrics were recorded in the unprotected environment before the implementation of any security controls. Following this, a range of security measures were enforced to fortify the network against potential threats. Upon implementation of these controls, another set of measurements was taken.
+
+The comparison of pre- and post-implementation metrics demonstrated a significant reduction in security events and incidents, which highlights the effectiveness of the enforced security controls.
+It's important to mention that if the network's resources were extensively engaged by regular users, it's plausible that a higher number of security events and alerts could have been produced within the 24-hour timeframe post-security control implementation.
