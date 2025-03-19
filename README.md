@@ -26,3 +26,20 @@ The main objective of this project was to [set up virtual machines that were int
 - PowerShell for Automation and Configuration Management
 - [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls
 - [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
+
+## Methodology
+
+- <b>*Creating the honeynet*</b>: I began by [deploying multiple vulnerable virtual machines](https://github.com/steph-daws/Azure-VM-Prep/blob/main/README.md) in Azure, simulating an insecure environment.
+
+- <b>*Monitoring and analysis*</b>: Azure was configured to ingest log sources from various resources into a log analytics workspace. Microsoft Sentinel was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
+
+- <b>*Security metrics measurement*</b>: I observed the environment for 24 hours, recording key security metrics while it was insecure. This provided a baseline to compare against after implementing remediation measures.
+
+- <b>*Incident response and remediation*</b>: After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying security best practices and Azure-specific recommendations.
+
+- <b>*Post-remediation analysis*</b>: I re-observed the environment for another 24 hours to measure security metrics again, comparing the results with the initial baseline.
+
+
+## Architecture Prior to Implementing Hardening Measures and Security Controls
+![Architecture Diagram](https://i.imgur.com/1tLjWY9.png)
+
