@@ -39,6 +39,12 @@ The main objective of this project was to [set up virtual machines that were int
 
 - <b>*Post-remediation analysis*</b>: I re-observed the environment for another 24 hours to measure security metrics again, comparing the results with the initial baseline.
 
+<b>Before Hardening Measures and Security Controls:</b>
+
+- In the "BEFORE" stage of the project, all resources were initially deployed with public exposure to the internet. This setup was intentionally insecure to attract potential cyber attackers and observe their tactics. The Virtual Machines had both their Network Security Groups (NSGs) and built-in firewalls wide open, allowing unrestricted access from any source. Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security.
+
+  
+
 
 ## Architecture Prior to Implementing Hardening Measures and Security Controls
 ![Architecture Diagram](https://i.imgur.com/1tLjWY9.png)
